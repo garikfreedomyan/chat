@@ -1,0 +1,41 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "video and message chat",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garikfreedomyan/chat.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "reactjs",
+    "webrtc",
+    "mongodb"
+  ],
+  "author": "Garik Freedomyan <garikfreedomyan@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garikfreedomyan/chat/issues"
+  },
+  "homepage": "https://github.com/garikfreedomyan/chat#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "config": "^3.3.3",
+    "connect-mongodb-session": "^2.4.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.11.5",
+    "uuid": "^8.3.1"
+  }
+}
