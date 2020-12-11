@@ -1,0 +1,68 @@
+.users-list {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  flex-shrink: 0;
+  height: 100vh;
+  padding: 24px 0;
+  overflow: hidden;
+}
+
+.users-list__title {
+  padding: 0 16px;
+  margin-bottom: 16px;
+
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.users-list__list {
+  flex-grow: 1;
+  width: 100%;
+  padding: 0 16px 24px;
+  overflow-y: scroll;
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+  scroll-behavior: smooth;
+}
+
+.users-list__list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.users-list__list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.users-list__list::-webkit-scrollbar-thumb {
+  background-color: #13afdb;
+  border-radius: 5px;
+}
+
+.users-list__user {
+  display: flex;
+  align-items: center;
+}
+
+.users-list__user:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.users-list__user img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff;
+  margin-right: 8px;
+
+  border-radius: 50%;
+}
+
+.users-list__user span {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.users-list__user .pink-text {
+  font-size: 10px;
+}

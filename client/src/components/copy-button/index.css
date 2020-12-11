@@ -1,0 +1,20 @@
+.copy-button {
+  height: 40px;
+  padding: 8px 12px;
+  border: none;
+  margin: 16px 16px 0;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  border-radius: 0;
+  background-color: #ef5284;
+
+  transition: 300ms;
+}
+
+.copy-button:active {
+  outline: none;
+  color: #13afdb;
+}

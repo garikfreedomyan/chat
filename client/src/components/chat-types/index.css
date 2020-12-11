@@ -1,0 +1,47 @@
+.chat-types {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chat-types__element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+}
+
+.chat-types__icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 8px;
+}
+
+.chat-types__text {
+  font-size: 14px;
+  text-transform: uppercase;
+
+  transition: 200ms;
+}
+
+.chat-types__text--blue {
+  color: #13afdb;
+}
+
+.chat-types__text--pink {
+  color: #ef5284;
+}
+
+@media (min-width: 768px) {
+  .chat-types__element {
+    margin: 16px;
+  }
+
+  .chat-types__icon {
+    margin-bottom: 16px;
+  }
+
+  .chat-types__text {
+    font-size: 20px;
+  }
+}

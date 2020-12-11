@@ -1,0 +1,44 @@
+.message-form {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  min-height: 40px;
+}
+
+.message-form input {
+  width: calc(100% - 100px);
+  height: 40px;
+  padding: 8px 16px;
+  border: none;
+  border-top: 1px solid #13afdb;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 16px;
+  color: #051033;
+
+  background-color: #ffffff;
+  border-radius: 0;
+  outline: none;
+
+  transition: 300ms;
+}
+
+.message-form button {
+  flex-shrink: 0;
+  width: 100px;
+  height: 40px;
+  border: none;
+
+  font-size: 16px;
+  color: white;
+
+  background-color: #13afdb;
+  outline: none;
+
+  transition: 300ms;
+}
+
+.message-form button:active {
+  color: #051033;
+}

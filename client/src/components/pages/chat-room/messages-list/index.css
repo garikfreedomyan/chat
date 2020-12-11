@@ -1,0 +1,60 @@
+.messages-list {
+  height: calc(100vh - 40px);
+  padding: 32px 16px 0;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+  scroll-behavior: smooth;
+}
+
+.messages-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.messages-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.messages-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.messages-list__message {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.messages-list__message img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+
+  border-radius: 50%;
+}
+
+.messages-list__message div {
+  padding: 4px 16px;
+  border-radius: 8px;
+  background-color: rgba(211, 211, 211, 0.432);
+}
+
+.messages-list__message .pink-text {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+}
+
+.messages-list__message p {
+  margin-top: 4px;
+
+  font-size: 14px;
+  line-height: 14px;
+  color: #051033;
+}
+
+.messages-list__message .muted-text {
+  font-size: 10px;
+  color: gray;
+}

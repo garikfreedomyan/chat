@@ -6,18 +6,14 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 import App from './components/app';
 import ErrorBoundry from './components/error-boundry';
-import { ChatServiceProvider } from './components/chat-service-context';
-import chatService from './services/chat-service';
 import store from './store';
 
 ReactDOM.render(
   <Provider store={store}>
     <ErrorBoundry>
-      <ChatServiceProvider value={chatService}>
-        <Router>
-          <App />
-        </Router>
-      </ChatServiceProvider>
+      <Router>
+        <App />
+      </Router>
     </ErrorBoundry>
   </Provider>,
   document.getElementById('root')

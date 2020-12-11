@@ -1,0 +1,39 @@
+.avatars__label {
+  margin-bottom: 8px;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.avatars__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -4px;
+}
+
+.avatars__list-item {
+  margin: 4px;
+}
+
+.avatars__list-item label {
+  display: block;
+}
+
+.avatars__list-item input {
+  display: none;
+}
+
+.avatars__list-item img {
+  min-width: 80px;
+  min-height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+}
+
+.avatars__list-item input:checked ~ img {
+  outline: 2px solid lightgreen;
+}
