@@ -30,7 +30,7 @@ export async function joinRoom(roomId, name, avatar, socketId, stateUpdater, his
 export async function getUsers(roomId, stateUpdater) {
   try {
     const response = await fetch(`/get/chat-room/${roomId}/users`, {
-      method: 'GET',
+      method: 'POST',
     });
 
     if (!response.ok) {
@@ -49,7 +49,7 @@ export async function getUsers(roomId, stateUpdater) {
 export async function getMessages(roomId, stateUpdater) {
   try {
     const response = await fetch(`/get/chat-room/${roomId}/messages`, {
-      method: 'GET',
+      method: 'POST',
     });
 
     if (!response.ok) {

@@ -2,7 +2,7 @@ const { Router } = require('express');
 const ChatRoom = require('../models/chat-room');
 const router = Router();
 
-router.get('/chat-room/:id/users', async (req, res) => {
+router.post('/chat-room/:id/users', async (req, res) => {
   try {
     const chatRoom = await ChatRoom.findById(req.params.id);
     res.json(chatRoom.members);
@@ -12,7 +12,7 @@ router.get('/chat-room/:id/users', async (req, res) => {
   }
 });
 
-router.get('/chat-room/:id/messages', async (req, res) => {
+router.post('/chat-room/:id/messages', async (req, res) => {
   try {
     const chatRoom = await ChatRoom.findById(req.params.id);
     res.json(chatRoom.messages);
